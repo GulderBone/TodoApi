@@ -1,4 +1,4 @@
-package com.gulderbone.TodoApi;
+package com.gulderbone.todoApi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
