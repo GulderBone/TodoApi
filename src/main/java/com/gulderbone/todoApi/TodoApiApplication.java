@@ -10,16 +10,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TodoApiApplication implements CommandLineRunner {
 
-    @Autowired
-    private TodoItemRepository repository;
+  @Autowired
+  private TodoItemRepository repository;
 
-    public static void main(String[] args) {
-        SpringApplication.run(TodoApiApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(TodoApiApplication.class, args);
+  }
 
 
-    @Override
-    public void run(String... args) throws Exception {
+  @Override
+  public void run(String... args) throws Exception {
 
 //        repository.deleteAll();
 //
@@ -27,10 +27,10 @@ public class TodoApiApplication implements CommandLineRunner {
 //        repository.save(new ToDoItem(2L, "Do something else"));
 //        repository.save(new ToDoItem(3L, "Make a noise"));
 //
-//        System.out.println("Todo items found with findAll():");
-//        System.out.println("-------------------------------");
-//        for (ToDoItem toDoItem : repository.findAll()) {
-//            System.out.println(toDoItem);
-//        }
-    }
+        System.out.println("Todo items found with findAll():");
+        System.out.println("-------------------------------");
+        for (ToDoItem toDoItem : repository.findAll()) {
+            System.out.println(toDoItem);
+        }
+  }
 }
