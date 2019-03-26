@@ -5,5 +5,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface TodoItemRepository extends MongoRepository<ToDoItem, String> {
 
-    public ToDoItem findByTitle(String title);
+    public ToDoItem findById(Long id);
 }
