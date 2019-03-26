@@ -7,7 +7,7 @@ public class ToDoItem {
     @Id
     public Long id;
 
-    public String text;
+    public String title;
 
     public Long getId() {
         return id;
@@ -17,24 +17,24 @@ public class ToDoItem {
         this.id = id;
     }
 
-    public String getText() {
-        return text;
+    public String getTitle() {
+        return title;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public ToDoItem(Long id, String text) {
+    public ToDoItem(Long id, String title) {
         this.id = id;
-        this.text = text;
+        this.title = title;
     }
 
     @Override
     public String toString() {
         return "ToDoItem{" +
                 "id=" + id +
-                ", text='" + text + '\'' +
+                ", title='" + title + '\'' +
                 '}';
     }
 }
