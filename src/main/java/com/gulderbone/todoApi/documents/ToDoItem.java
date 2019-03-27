@@ -1,40 +1,28 @@
 package com.gulderbone.todoApi.documents;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
+@Getter
+@Setter
 public class ToDoItem {
 
-    @Id
-    public Long id;
+  @Id
+  public Long id;
 
-    public String title;
+  public String title;
 
-    public Long getId() {
-        return id;
-    }
+  public ToDoItem(Long id, String title) {
+    this.id = id;
+    this.title = title;
+  }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public ToDoItem(Long id, String title) {
-        this.id = id;
-        this.title = title;
-    }
-
-    @Override
-    public String toString() {
-        return "ToDoItem{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                '}';
-    }
+  @Override
+  public String toString() {
+    return "ToDoItem{" +
+        "id=" + id +
+        ", title='" + title + '\'' +
+        '}';
+  }
 }
