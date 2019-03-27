@@ -1,4 +1,4 @@
-package com.gulderbone.todoApi.documents;
+package com.gulderbone.todoapi.documents;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,9 +9,9 @@ import org.springframework.data.annotation.Id;
 public class ToDoItem {
 
   @Id
-  public Long id;
+  private Long id;
 
-  public String title;
+  private String title;
 
   public ToDoItem(Long id, String title) {
     this.id = id;

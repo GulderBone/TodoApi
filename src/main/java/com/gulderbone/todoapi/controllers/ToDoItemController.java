@@ -1,7 +1,7 @@
-package com.gulderbone.todoApi.controllers;
+package com.gulderbone.todoapi.controllers;
 
-import com.gulderbone.todoApi.documents.ToDoItem;
-import com.gulderbone.todoApi.repositories.TodoItemRepository;
+import com.gulderbone.todoapi.documents.ToDoItem;
+import com.gulderbone.todoapi.repositories.TodoItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
