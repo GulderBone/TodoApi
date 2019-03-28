@@ -1,44 +1,44 @@
-import React, { Component } from 'react'
-import { Button, FormGroup, FormControl, } from "react-bootstrap";
+import React, {Component} from 'react'
+import {Button, FormControl, FormGroup,} from "react-bootstrap";
 
 class Login extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
     this.state = {
-        email: "",
-        password: ""
-      };
-    }
+      email: "",
+      password: ""
+    };
+  }
 
   render() {
     return (
         <div style={loginStyle} className="Login">
-        <form style={formStyle} onSubmit={this.handleSubmit}>
-          <FormGroup controlId="email">
-            <FormControl
-              autoFocus
-              type="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="password">
-            <FormControl
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-            />
-          </FormGroup>
-          <Button
-            block
-            disabled={!this.validateForm()}
-            type="submit"
-          >
-            Login
-          </Button>
-        </form>
-      </div>
+          <form style={formStyle} onSubmit={this.handleSubmit}>
+            <FormGroup controlId="email">
+              <FormControl
+                  autoFocus
+                  type="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+              />
+            </FormGroup>
+            <FormGroup controlId="password">
+              <FormControl
+                  value={this.state.password}
+                  onChange={this.handleChange}
+                  type="password"
+              />
+            </FormGroup>
+            <Button
+                block
+                disabled={!this.validateForm()}
+                type="submit"
+            >
+              Login
+            </Button>
+          </form>
+        </div>
     )
   }
 
@@ -58,12 +58,12 @@ class Login extends Component {
 }
 
 const loginStyle = {
-    padding: '60px 0'
+  padding: '60px 0'
 }
 
 const formStyle = {
-    margin: '0 auto',
-    maxWidth: '320px'
+  margin: '0 auto',
+  maxWidth: '320px'
 }
 
 export default Login;
