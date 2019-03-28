@@ -31,8 +31,8 @@ public class TodoApiApplication implements CommandLineRunner {
 //        toDoItemrepository.save(new ToDoItem(1L, "Take out the thrash"));
 //        toDoItemrepository.save(new ToDoItem(2L, "Do something else"));
 //        toDoItemrepository.save(new ToDoItem(3L, "Make a noise"));
-
-    userRepository.save(new User(1L, "tomek@o2.pl", "1234"));
+//
+//    userRepository.save(new User(1L, "tomek@o2.pl", "1234"));
 //
     System.out.println("Todo items found with findAll():");
     System.out.println("-------------------------------");
