@@ -9,9 +9,9 @@ import org.springframework.data.annotation.Id;
 public class ToDoItem {
 
   @Id
-  private Long id;
+  public Long id;
 
-  private String title;
+  public String title;
 
   public ToDoItem(Long id, String title) {
     this.id = id;

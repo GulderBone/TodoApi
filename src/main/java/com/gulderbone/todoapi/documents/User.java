@@ -10,9 +10,9 @@ public class User {
   @Id
   private Long id;
 
-  private String mail;
+  public String mail;
 
-  private String password;
+  public String password;
 
   public User(Long id, String mail, String password) {
     this.id = id;
