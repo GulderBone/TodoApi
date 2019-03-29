@@ -1,4 +1,4 @@
-# Quick Start
+# React
 ```
 # Install dependencies
 npm install
